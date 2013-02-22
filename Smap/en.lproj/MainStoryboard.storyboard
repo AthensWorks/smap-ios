@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="js9-DD-geO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="js9-DD-geO">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="657" y="206"/>
+            <point key="canvasLocation" x="469" y="298"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XyG-h3-ILz">
@@ -93,7 +93,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IkJ-yR-qVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="54" y="596"/>
+            <point key="canvasLocation" x="-134" y="308"/>
         </scene>
         <!--View Controller - Find a Smell-->
         <scene sceneID="QiN-ph-hxk">
@@ -122,7 +122,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fB1-eS-LQe" kind="push" id="W2S-kY-HBe"/>
+                                    <segue destination="fB1-eS-LQe" kind="push" identifier="View" id="W2S-kY-HBe"/>
                                 </connections>
                             </button>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ijc-gz-aPY">
@@ -153,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9xf-V4-hpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="978" y="902"/>
+            <point key="canvasLocation" x="1082" y="854"/>
         </scene>
         <!--View Controller - Smell-->
         <scene sceneID="CxM-7V-TGb">
@@ -187,6 +187,11 @@
                                     <segment title="Up"/>
                                 </segments>
                             </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i45-MC-Twb">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -194,7 +199,9 @@
                             <constraint firstItem="OkF-wZ-4O7" firstAttribute="top" secondItem="Qbn-Vl-jOH" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="6oz-hv-Vfg"/>
                             <constraint firstItem="XPp-L7-a9p" firstAttribute="top" secondItem="VXF-7V-ehn" secondAttribute="top" constant="204" id="8l0-Vg-J3M"/>
                             <constraint firstItem="XPp-L7-a9p" firstAttribute="centerX" secondItem="Qbn-Vl-jOH" secondAttribute="centerX" type="default" id="D9J-7K-5N2"/>
+                            <constraint firstItem="i45-MC-Twb" firstAttribute="centerX" secondItem="XPp-L7-a9p" secondAttribute="centerX" type="default" id="RVX-mb-Pb9"/>
                             <constraint firstItem="OkF-wZ-4O7" firstAttribute="leading" secondItem="VXF-7V-ehn" secondAttribute="leading" type="default" id="clu-SD-pqx"/>
+                            <constraint firstItem="i45-MC-Twb" firstAttribute="top" secondItem="VXF-7V-ehn" secondAttribute="top" constant="20" symbolic="YES" type="default" id="iTD-x2-9WY"/>
                             <constraint firstItem="Qbn-Vl-jOH" firstAttribute="trailing" secondItem="VXF-7V-ehn" secondAttribute="trailing" type="default" id="lbw-Z2-udg"/>
                             <constraint firstItem="Qbn-Vl-jOH" firstAttribute="leading" secondItem="VXF-7V-ehn" secondAttribute="leading" type="default" id="nFr-q8-SsU"/>
                             <constraint firstItem="OkF-wZ-4O7" firstAttribute="trailing" secondItem="VXF-7V-ehn" secondAttribute="trailing" type="default" id="vza-Pd-m3t"/>
@@ -205,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3HI-e8-rjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="479" y="1062"/>
+            <point key="canvasLocation" x="1731" y="658"/>
         </scene>
         <!--View Controller - Choose Reactions-->
         <scene sceneID="lWJ-OY-1x1">
@@ -238,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jKw-lR-PTI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1743" y="460"/>
+            <point key="canvasLocation" x="1731" y="-222"/>
         </scene>
         <!--Table View Controller - Log a Smell-->
         <scene sceneID="I1u-Ms-JYi">
@@ -261,6 +268,9 @@
                                     <state key="highlighted">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <connections>
+                                        <segue destination="fB1-eS-LQe" kind="push" identifier="Post" id="EXW-PR-Niw"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -323,12 +333,33 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W9u-lm-pgn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1262" y="94"/>
+            <point key="canvasLocation" x="1090" y="94"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="ATHViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ATHViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="gradientView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="W2S-kY-HBe"/>
+    </inferredMetricsTieBreakers>
 </document>
