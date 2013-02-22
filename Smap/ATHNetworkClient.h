@@ -8,6 +8,7 @@
 
 #import "AFNetworking.h"
 #import "ATHSmell.h"
+#import <CoreLocation/CoreLocation.h>
 
 @interface ATHNetworkClient : AFHTTPClient
 
@@ -22,5 +23,10 @@
 				   longitude:(NSNumber *)longitude
 					 success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
 					 failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
+
+- (void)getSmellsNearLocation:(CLLocationCoordinate2D)location
+					 distance:(CLLocationDistance)distance
+					  success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
+					  failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
 
 @end

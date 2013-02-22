@@ -9,6 +9,10 @@
 #import "ATHNetworkClient.h"
 #import "AFNetworking.h"
 
+#ifndef METER_PER_MILE
+#define METER_PER_MILE 0.000621371
+#endif
+
 NSString *const baseURLPath = @"http:/georoma.herokuapp.com";
 
 @implementation ATHNetworkClient
@@ -51,5 +55,18 @@ NSString *const baseURLPath = @"http:/georoma.herokuapp.com";
 	
 	[self postPath:@"post/v1/smells" parameters:params success:success failure:failure];
 }
+
+- (void)getSmellsNearLocation:(CLLocationCoordinate2D)location distance:(CLLocationDistance)distance success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure {
+	double miles = distance * METER_PER_MILE;
+	if ( location.longitude == 0 && location.latitude == 0 )
+		return;
+	
+	NSDictionary *params = @{@"lat": @(location.latitude),
+						  @"lon" : @(location.longitude),
+						  @"dist" : @(miles)};
+	
+	[self getPath:@"get/v1/smells" parameters:params success:success failure:failure];
+}
+
 
 @end
