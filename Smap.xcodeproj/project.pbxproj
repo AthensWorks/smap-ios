@@ -71,8 +71,8 @@
 		9AE59A0C16D71ADD00F4B9A3 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		9AE59A0D16D71ADD00F4B9A3 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		9AE59A0E16D71ADD00F4B9A3 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
-		9AE59A1816D71B0900F4B9A3 /* ATHNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ATHNetworkClient.h; path = ../AFNetworking/AFNetworking/ATHNetworkClient.h; sourceTree = "<group>"; };
-		9AE59A1916D71B0900F4B9A3 /* ATHNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ATHNetworkClient.m; path = ../AFNetworking/AFNetworking/ATHNetworkClient.m; sourceTree = "<group>"; };
+		9AE59A1816D71B0900F4B9A3 /* ATHNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATHNetworkClient.h; sourceTree = "<group>"; };
+		9AE59A1916D71B0900F4B9A3 /* ATHNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATHNetworkClient.m; sourceTree = "<group>"; };
 		9AE59A1B16D71D2000F4B9A3 /* ATHSmell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATHSmell.h; sourceTree = "<group>"; };
 		9AE59A1C16D71D2000F4B9A3 /* ATHSmell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATHSmell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
