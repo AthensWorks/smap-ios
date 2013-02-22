@@ -31,7 +31,6 @@
 		9AE59A1716D71ADD00F4B9A3 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE59A0E16D71ADD00F4B9A3 /* UIImageView+AFNetworking.m */; };
 		9AE59A1A16D71B0900F4B9A3 /* ATHNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE59A1916D71B0900F4B9A3 /* ATHNetworkClient.m */; };
 		9AE59A1D16D71D2000F4B9A3 /* ATHSmell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE59A1C16D71D2000F4B9A3 /* ATHSmell.m */; };
-		B5ECB37A16D7174F00C11E71 /* ATHLogASmellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ECB37916D7174F00C11E71 /* ATHLogASmellViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,8 +138,6 @@
 				9AE59A1916D71B0900F4B9A3 /* ATHNetworkClient.m */,
 				9AE599FB16D71ADD00F4B9A3 /* AFNetworking */,
 				9A05D1E516D70165007621F1 /* Supporting Files */,
-				B5ECB37816D7174F00C11E71 /* ATHLogASmellViewController.h */,
-				B5ECB37916D7174F00C11E71 /* ATHLogASmellViewController.m */,
 			);
 			path = Smap;
 			sourceTree = "<group>";

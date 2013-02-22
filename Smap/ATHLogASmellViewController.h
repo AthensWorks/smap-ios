@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ATHSmell.h"
 
 @interface ATHLogASmellViewController : UITableViewController <UITextFieldDelegate>
+
+@property ATHSmell *smell;
 
 @end
