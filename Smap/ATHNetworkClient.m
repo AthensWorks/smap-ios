@@ -33,8 +33,23 @@ NSString *const baseURLPath = @"http:/georoma.herokuapp.com";
 	return self;
 }
 
-- (void)postNewSmellWithName:(NSString *)name latitude:(NSNumber *)latitude longitude:(NSNumber *)longitude {
+- (void)postNewSmell:(ATHSmell *)smell success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure {
+	[self postNewSmellWithName:smell.name latitude:smell.lat longitude:smell.lon success:success failure:failure];
+}
+
+- (void)postNewSmellWithName:(NSString *)name latitude:(NSNumber *)latitude longitude:(NSNumber *)longitude success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure {
+	if ( name.length == 0 )
+		return;
+	if ( latitude == nil )
+		return;
+	if ( longitude == nil )
+		return;
 	
+	NSDictionary *params = @{@"name": name,
+						  @"lat": latitude,
+						  @"long": longitude};
+	
+	[self postPath:@"post/v1/smells" parameters:params success:success failure:failure];
 }
 
 @end
