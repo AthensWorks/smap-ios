@@ -12,6 +12,7 @@
 @interface ATHViewController ()
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UIView *gradientView;
+@property (weak, nonatomic) CAGradientLayer *gradient;
 
 @end
 
@@ -19,17 +20,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	
 	self.mapView.userTrackingMode = MKUserTrackingModeFollow;
-	
-	self.gradientView.backgroundColor = [UIColor clearColor];
-	CAGradientLayer *gradient = [[CAGradientLayer alloc] init];
-	gradient.frame = self.gradientView.bounds;
-	gradient.colors = @[(id)[UIColor colorWithWhite:0.3 alpha:1.0f].CGColor,
-					 (id)[UIColor colorWithWhite:0.3 alpha:1.0f].CGColor,
-					 (id)[UIColor colorWithWhite:0.3 alpha:0.0f].CGColor];
-	gradient.locations = @[@0, @0.8, @1];
-	[self.gradientView.layer addSublayer:gradient];
+}
+
+- (void)viewDidLayoutSubviews {
+	if ( !self.gradient ) {
+		self.gradientView.backgroundColor = [UIColor clearColor];
+		CAGradientLayer *gradient = [[CAGradientLayer alloc] init];
+		gradient.frame = self.gradientView.bounds;
+		gradient.colors = @[(id)[UIColor colorWithWhite:0.3 alpha:1.0f].CGColor,
+						 (id)[UIColor colorWithWhite:0.3 alpha:1.0f].CGColor,
+						 (id)[UIColor colorWithWhite:0.3 alpha:0.0f].CGColor];
+		float pointJustBelowButtons = 84.0f/CGRectGetHeight(self.gradientView.bounds);
+		gradient.locations = @[@0, @(pointJustBelowButtons), @1];
+		[self.gradientView.layer insertSublayer:gradient atIndex:0];
+		self.gradient = gradient;
+	}
 }
 
 - (void)didReceiveMemoryWarning
