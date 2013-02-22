@@ -47,7 +47,7 @@ NSString *const baseURLPath = @"http:/georoma.herokuapp.com";
 	
 	NSDictionary *params = @{@"name": name,
 						  @"lat": latitude,
-						  @"long": longitude};
+						  @"lon": longitude};
 	
 	[self postPath:@"post/v1/smells" parameters:params success:success failure:failure];
 }
