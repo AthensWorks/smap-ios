@@ -31,7 +31,6 @@
 		9AE59A1716D71ADD00F4B9A3 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE59A0E16D71ADD00F4B9A3 /* UIImageView+AFNetworking.m */; };
 		9AE59A1A16D71B0900F4B9A3 /* ATHNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE59A1916D71B0900F4B9A3 /* ATHNetworkClient.m */; };
 		9AE59A1D16D71D2000F4B9A3 /* ATHSmell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE59A1C16D71D2000F4B9A3 /* ATHSmell.m */; };
-		B5ECB37A16D7174F00C11E71 /* ATHLogASmellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ECB37916D7174F00C11E71 /* ATHLogASmellViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +52,6 @@
 		9A05D1FA16D70165007621F1 /* ATHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATHViewController.m; sourceTree = "<group>"; };
 		9AE599F716D7064300F4B9A3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9AE599F916D70F2700F4B9A3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-<<<<<<< HEAD
 		9AE599FC16D71ADD00F4B9A3 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		9AE599FD16D71ADD00F4B9A3 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		9AE599FE16D71ADD00F4B9A3 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -77,10 +75,6 @@
 		9AE59A1916D71B0900F4B9A3 /* ATHNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATHNetworkClient.m; sourceTree = "<group>"; };
 		9AE59A1B16D71D2000F4B9A3 /* ATHSmell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATHSmell.h; sourceTree = "<group>"; };
 		9AE59A1C16D71D2000F4B9A3 /* ATHSmell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATHSmell.m; sourceTree = "<group>"; };
-=======
-		B5ECB37816D7174F00C11E71 /* ATHLogASmellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATHLogASmellViewController.h; sourceTree = "<group>"; };
-		B5ECB37916D7174F00C11E71 /* ATHLogASmellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATHLogASmellViewController.m; sourceTree = "<group>"; };
->>>>>>> Changed Cell to allow editing in log a smell controller.
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +136,6 @@
 				9AE59A1916D71B0900F4B9A3 /* ATHNetworkClient.m */,
 				9AE599FB16D71ADD00F4B9A3 /* AFNetworking */,
 				9A05D1E516D70165007621F1 /* Supporting Files */,
-				B5ECB37816D7174F00C11E71 /* ATHLogASmellViewController.h */,
-				B5ECB37916D7174F00C11E71 /* ATHLogASmellViewController.m */,
 			);
 			path = Smap;
 			sourceTree = "<group>";
@@ -259,7 +251,6 @@
 				9A05D1EB16D70165007621F1 /* main.m in Sources */,
 				9A05D1EF16D70165007621F1 /* ATHAppDelegate.m in Sources */,
 				9A05D1FB16D70165007621F1 /* ATHViewController.m in Sources */,
-<<<<<<< HEAD
 				9AE59A0F16D71ADD00F4B9A3 /* AFHTTPClient.m in Sources */,
 				9AE59A1016D71ADD00F4B9A3 /* AFHTTPRequestOperation.m in Sources */,
 				9AE59A1116D71ADD00F4B9A3 /* AFImageRequestOperation.m in Sources */,
@@ -271,9 +262,6 @@
 				9AE59A1716D71ADD00F4B9A3 /* UIImageView+AFNetworking.m in Sources */,
 				9AE59A1A16D71B0900F4B9A3 /* ATHNetworkClient.m in Sources */,
 				9AE59A1D16D71D2000F4B9A3 /* ATHSmell.m in Sources */,
-=======
-				B5ECB37A16D7174F00C11E71 /* ATHLogASmellViewController.m in Sources */,
->>>>>>> Changed Cell to allow editing in log a smell controller.
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
