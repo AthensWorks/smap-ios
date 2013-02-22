@@ -18,6 +18,8 @@
 		9A05D1F516D70165007621F1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A05D1F416D70165007621F1 /* Default-568h@2x.png */; };
 		9A05D1F816D70165007621F1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A05D1F616D70165007621F1 /* MainStoryboard.storyboard */; };
 		9A05D1FB16D70165007621F1 /* ATHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A05D1FA16D70165007621F1 /* ATHViewController.m */; };
+		9AE599F816D7064300F4B9A3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE599F716D7064300F4B9A3 /* MapKit.framework */; };
+		9AE599FA16D70F2700F4B9A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE599F916D70F2700F4B9A3 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		9A05D1F716D70165007621F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		9A05D1F916D70165007621F1 /* ATHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATHViewController.h; sourceTree = "<group>"; };
 		9A05D1FA16D70165007621F1 /* ATHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATHViewController.m; sourceTree = "<group>"; };
+		9AE599F716D7064300F4B9A3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9AE599F916D70F2700F4B9A3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AE599FA16D70F2700F4B9A3 /* QuartzCore.framework in Frameworks */,
+				9AE599F816D7064300F4B9A3 /* MapKit.framework in Frameworks */,
 				9A05D1DF16D70165007621F1 /* UIKit.framework in Frameworks */,
 				9A05D1E116D70165007621F1 /* Foundation.framework in Frameworks */,
 				9A05D1E316D70165007621F1 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +79,8 @@
 		9A05D1DD16D70165007621F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9AE599F916D70F2700F4B9A3 /* QuartzCore.framework */,
+				9AE599F716D7064300F4B9A3 /* MapKit.framework */,
 				9A05D1DE16D70165007621F1 /* UIKit.framework */,
 				9A05D1E016D70165007621F1 /* Foundation.framework */,
 				9A05D1E216D70165007621F1 /* CoreGraphics.framework */,
@@ -299,6 +307,7 @@
 				9A05D20016D70165007621F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
