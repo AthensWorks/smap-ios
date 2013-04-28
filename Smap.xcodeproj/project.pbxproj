@@ -31,6 +31,9 @@
 		9AE59A1716D71ADD00F4B9A3 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE59A0E16D71ADD00F4B9A3 /* UIImageView+AFNetworking.m */; };
 		9AE59A1A16D71B0900F4B9A3 /* ATHNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE59A1916D71B0900F4B9A3 /* ATHNetworkClient.m */; };
 		9AE59A1D16D71D2000F4B9A3 /* ATHSmell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE59A1C16D71D2000F4B9A3 /* ATHSmell.m */; };
+		B50423DE172CDE4900ECAE42 /* ATHLogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50423DD172CDE4900ECAE42 /* ATHLogTableViewController.m */; };
+		B50423E0172CE0D100ECAE42 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B50423DF172CE0D100ECAE42 /* MobileCoreServices.framework */; };
+		B50423E2172CE0E000ECAE42 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B50423E1172CE0E000ECAE42 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,8 +78,10 @@
 		9AE59A1916D71B0900F4B9A3 /* ATHNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATHNetworkClient.m; sourceTree = "<group>"; };
 		9AE59A1B16D71D2000F4B9A3 /* ATHSmell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATHSmell.h; sourceTree = "<group>"; };
 		9AE59A1C16D71D2000F4B9A3 /* ATHSmell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATHSmell.m; sourceTree = "<group>"; };
-		B5ECB37816D7174F00C11E71 /* ATHLogASmellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATHLogASmellViewController.h; sourceTree = "<group>"; };
-		B5ECB37916D7174F00C11E71 /* ATHLogASmellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATHLogASmellViewController.m; sourceTree = "<group>"; };
+		B50423DC172CDE4900ECAE42 /* ATHLogTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATHLogTableViewController.h; sourceTree = "<group>"; };
+		B50423DD172CDE4900ECAE42 /* ATHLogTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATHLogTableViewController.m; sourceTree = "<group>"; };
+		B50423DF172CE0D100ECAE42 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B50423E1172CE0E000ECAE42 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B50423E2172CE0E000ECAE42 /* SystemConfiguration.framework in Frameworks */,
+				B50423E0172CE0D100ECAE42 /* MobileCoreServices.framework in Frameworks */,
 				9AE599FA16D70F2700F4B9A3 /* QuartzCore.framework in Frameworks */,
 				9AE599F816D7064300F4B9A3 /* MapKit.framework in Frameworks */,
 				9A05D1DF16D70165007621F1 /* UIKit.framework in Frameworks */,
@@ -98,6 +105,8 @@
 		9A05D1D216D70164007621F1 = {
 			isa = PBXGroup;
 			children = (
+				B50423E1172CE0E000ECAE42 /* SystemConfiguration.framework */,
+				B50423DF172CE0D100ECAE42 /* MobileCoreServices.framework */,
 				9A05D1E416D70165007621F1 /* Smap */,
 				9A05D1DD16D70165007621F1 /* Frameworks */,
 				9A05D1DC16D70165007621F1 /* Products */,
@@ -138,6 +147,8 @@
 				9AE59A1916D71B0900F4B9A3 /* ATHNetworkClient.m */,
 				9AE599FB16D71ADD00F4B9A3 /* AFNetworking */,
 				9A05D1E516D70165007621F1 /* Supporting Files */,
+				B50423DC172CDE4900ECAE42 /* ATHLogTableViewController.h */,
+				B50423DD172CDE4900ECAE42 /* ATHLogTableViewController.m */,
 			);
 			path = Smap;
 			sourceTree = "<group>";
@@ -264,7 +275,7 @@
 				9AE59A1716D71ADD00F4B9A3 /* UIImageView+AFNetworking.m in Sources */,
 				9AE59A1A16D71B0900F4B9A3 /* ATHNetworkClient.m in Sources */,
 				9AE59A1D16D71D2000F4B9A3 /* ATHSmell.m in Sources */,
-				B5ECB37A16D7174F00C11E71 /* ATHLogASmellViewController.m in Sources */,
+				B50423DE172CDE4900ECAE42 /* ATHLogTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
